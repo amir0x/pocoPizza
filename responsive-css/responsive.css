@@ -1,0 +1,147 @@
+/* Responsive css For Responsive Website*/
+
+/* ========== Table Of Media ===========
+    1. max-width:1024px
+        1.1 Header Section
+
+*/
+@media screen and (min-width:1400px){
+    header, .home-container,
+    .menu-section{
+        width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} /*--------./min-width:1400px -------*/
+
+
+@media screen and (max-width:1024px){
+    /* Header Section*/
+    header #menu-bar{
+        display: block;
+    }
+    .header-widget{
+        display: none;
+    }
+
+    /* footer widget display block  */
+    .handheld-footer-bar{
+        display: block;
+    }
+
+    /* nav toggle  */
+    header .navbar {
+        position: fixed;
+        top: 8rem;
+        left: 0;
+        width: 100%;
+        background: #000;
+        border-top: .2rem solid rgba(0,0,0, .1);
+        transform: scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+        transition: all .3s linear;
+    }
+    header .navbar ul {
+        flex-flow: column;
+        padding: 2rem;
+        
+    }
+    header .navbar ul li {
+        margin: 1.5rem;
+        width: 100%;
+        /* boreder li */
+        border-style: solid;
+        border-width: 1px 0 0;
+        border-color: #0e0e0e;
+    }
+    /* li hover effect  */
+    header .navbar ul li:hover{
+        background-color: #0e0e0e;
+        color: #FFC222;
+    }
+    header .navbar ul li a {
+        display: block;
+        color: #fff;
+        padding-left: 2rem;
+        border-left: .2rem solid #fff;
+        font-size: 2rem;
+    }
+    header .navbar.nav-toggle {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    section.copyright-section{
+        margin-bottom: 5rem;
+    }
+
+
+} /*--------./max-width:1024px -------*/
+
+@media (max-width: 991px){
+    html {
+        font-size: 55%;
+    }
+}/*--------./max-width:991px -------*/
+
+@media screen and (max-width:767px){
+    section.home{
+        height: auto;
+    }
+    .home-container{
+        flex-direction: column-reverse;
+        width: 100%;
+        padding-right: 5%;
+        position: inherit;
+        top: 0;
+    }
+    .home-container .content, .home-container .images{
+        width: 100%;
+        text-align: center;
+    }
+    .home-container .images .pizza {
+        position: inherit;
+    }
+    .home-container .content .content-row{
+        margin-top: 8rem;
+        align-items: center;
+    }
+    .home-container .content div img.shape-5 {
+        display: none;
+    }
+    .footer-row{
+        flex-direction: column;
+    }
+    .footer-column{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+} /*--------./max-width:767px -------*/
+
+@media screen and (max-width:575px){
+    section.home{
+        padding: 5%;
+        background-image: none;
+    }
+    .home-container .content div img.tomato {
+        display: none;
+    }
+    .home-container{
+        flex-direction: column;
+    }
+    .home-container .images .pizza{
+        margin-top: 3rem;
+        width: 100%;
+    }
+    .content-row .heading .heading-title {
+        font-size: 5.6rem;
+    }
+
+    /* booking btn  */
+    .content-row .button-wrapper .button-text{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+} /*--------./max-width:575px -------*/

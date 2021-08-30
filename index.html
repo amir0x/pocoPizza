@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+    <title>Restora</title>
+    <!------------------ Google-font cdn link ---------->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!---------------- Font Awsome css link  ----------->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+
+
+    <!-------------- coustom css link  ------------>
+    <link rel="stylesheet" href="style.css">
+
+    <!-------------- responsive css link  ------------>
+    <link rel="stylesheet" href="responsive-css/responsive.css">
+    
+</head>
+<body>
+    <!------------- Header Section Start ----------->
+    <header>
+        <a href="index.html" class="logo"><img src="images/logo-img.png" alt="Logo-img"></a>
+        <div id="menu-bar" class="fas fa-hamburger"></div>
+        <nav  class="navbar">
+            <ul>
+                <!-- <li> <a class="active" href="#home">home</a></li> -->
+                <li> <a class="active" href="#About">about</a></li>
+                <li> <a href="#menu">menu</a></li>
+                <li> <a href="#popular">table booking</a></li>
+                <li> <a href="#gallery">gallery</a></li>
+                <li> <a href="#gallery">reveiw</a></li>
+                <li> <a href="#gallery">Contact</a></li>
+            </ul>
+        </nav>
+        <!--------- header widget-- ------------>
+        <div class="header-widget">
+            <div class="site-header-search">
+                <a class="header-search-btn" href="#"><i class="fas fa-search"></i></a>
+                <!--------- header-search-bar ------------>
+                <div class="header-search-bar">
+                    <div class="search-result" style="display: none;"></div>
+                    <form method="get" class="product-search">
+                        <input type="search" class="search-field" placeholder="Search poducts...">
+                        <button type="submit" value="Search">Search</button>
+                    </form>
+                </div> <!--./header search bar-->
+            </div><!--./site header search-->
+            <div class="site-header-account">
+                <a href="#"><i class="fas fa-user-alt"></i></a>
+                <!-- account dropdown  -->
+                <div class="account-dropdown">
+                    <div class="account-wrap">
+                        <div class="account-inner">
+                            <div class="login-form-head">
+                                <span class="login-form-title">Sign in</span>
+                                <span class="pull-right">
+                                    <a href="#" class="register-link">
+                                        Create an Account
+                                    </a>
+                                </span>
+                            </div> <!--./login-form-head-->
+                            <form class="site-login-form">
+                                <p>
+                                    <label>Username of email <span class="required">*</span></label>
+                                    <input name="username" type="text" required placeholder="Username">
+                                </p>
+                                <p>
+                                    <label>Password <span class="required">*</span></label>
+                                    <input name="password" type="password" required placeholder="Password">
+                                </p>
+                                <button class="btn-user-submit" type="submit">Login</button>
+                            </form>
+                            <div class="login-form-bottom">
+                                <a href="#" class="lostpass-link" title="Lost your password?">Lost your password?</a>
+                            </div>
+                        </div> <!--./account-inner-->
+                    </div> <!--./account-wrap-->
+                </div><!-- ./account dropdown  -->
+            </div><!--./site header account-->
+            <div class="site-header-wishlist">
+                <a href="wishlist.html" class="header-wishlist">
+                    <i class="fas fa-drumstick-bite"></i>
+                    <span class="count">52</span>
+                </a>
+            </div>
+            <div class="site-header-cart menu">
+                <a href="#" class="cart-content">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span class="count">0</span>
+                </a>
+            </div>
+        </div> <!-- ./header-widget--->
+    </header>
+
+    <!------------Widget Footer Bar start----------->
+    <div class="handheld-footer-bar">
+        <ul class="columns-5">
+            <li class="shop">
+                <a href="#"><span class="title">Shop</span></a>
+            </li>
+            <li class="my-account">
+                <a href="#"><span class="title">My Account</span></a>
+            </li>
+            <li class="search active">
+                <a href="#"><span class="title">Search</span></a>
+                <!--------- footer site search bar ------------>
+                <div class="footer-search-bar" style="display: none;" data-toggle="toggle">
+                    <div class="search-result" style="display: none;"></div>
+                    <form method="get" class="product-search">
+                        <input type="search" class="search-field" placeholder="Search poducts...">
+                        <button type="submit" value="Search">Search</button>
+                    </form>
+                </div> <!--./footer site search bar-->
+                
+            </li>
+            <li class="wishlist">
+                <a class="footer-wishlist" href="wishlist.html">
+                    <span class="title">Wishlist</span>
+                    <span class="count">52</span>
+                </a>
+            </li>
+            <li class="cart">
+                <a class="footer-cart-contents" href="#" title="View your shopping cart">
+                    <span class="title">Cart</span>
+                    <span class="count">0</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div> <!--./handheld-footer-bar-->
+<!------------ ./Widget Footer Bar End----------->
+    <!------------- ./Header Section End ----------->
+
+    <!------------- Home Section Start  ----------->
+    <section class="home" id="home">
+        <div class="home-container">
+            <div class="content">
+                <div>
+                    <img class="layer tomato" data-speed='5' src="images/h1_tomato.png" alt="">
+                    <img class="layer shape-5" data-speed='-6' src="images/h1_shape-5.png" alt="">
+                </div>    
+                <div class="content-row">
+                    <div class="heading">
+                        <h2 class="heading-title">UNLIMITED 
+                        <br/> MEDIUM
+                            <span style="color: #ffcc00;">PIZZAS</span>
+                        </h2>
+                    </div>
+                    <div class="heading">
+                        <h4 class="heading-title-h4">Medium 2-topping * pizza</h4>
+                    </div>
+                    <div class="heading">
+                        <div class="text-editor">
+                            *Additional charge for premium topping. Minimum of 2 required.
+                        </div>
+                    </div>
+                    <!--button-->
+                    <div class="button-wrapper">
+                        <a href="#" class="button-text">
+                                book a table
+                        </a>
+                        <span class="heading-title-h3">$12.99</span>
+                    </div>
+                </div> <!-- ./content-row-->
+            </div> <!--./content-->
+            <div class="images">
+                <div>
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="images/h1_pizza285.png">
+                        <source media="(max-width: 575px)" srcset="images/h1_pizza360.png">
+                        <source media="(max-width: 991px)" srcset="images/h1_pizza497.png">
+                        <img class="pizza" src="images/h1_pizza.png" alt="Pizza">
+                    </picture>
+                </div>
+            </div>
+        </div> <!--./home-container-->
+    </section>
+
+    <!------------- Home Section End  ----------->
+
+
+
+    <!-------------- Products items start  ------------->
+    <section class="menu">
+        <div class="menu-section">
+            <div class="heading-title-container">
+                <h2 class="heading-title">Popular dishes</h2>
+            </div> <!--./heading-title-container-->
+            <div class="menu-tab-container">
+                <div class="tabs-wrapper">
+                    <div class="tab-title active">pizza</div>
+                    <div class="tab-title">sushi</div>
+                    <div class="tab-title">slatas</div>
+                    <div class="tab-title">burger</div>
+                    <div class="tab-title">dersest</div>
+                </div> <!--./tabs-wrapper-->
+                <div class="tabs-contents">
+                    <div class="tab-content-item">
+                        <ul class="products columns-4">
+                            <li class="product">
+                                <div class="product-block">
+                                    <span class="onsale">Sale!</span>
+                                    <div class="product-transition">
+                                        <button class="woosw-btn">Add to wishlist</button>
+                                        <div class="product-image">
+                                            <img src="images/3-1-450x450.png" alt="">
+                                        </div>
+                                        <a href="#"></a>
+                                    </div> <!--./product-transition-->
+                                    <div class="product-caption">
+                                        <div class="star-rating">
+                                            <span style="width: 65%;"> Rated
+                                                <strong class="rating">3.25</strong>
+                                                out of 5
+                                            </span>
+                                        </div>
+                                        <h3 class="product-title">
+                                            <a href="#">BBQ chicken breast</a>
+                                        </h3>
+                                        <div class="short-description"> A mighty meaty double helping of all the reasons you love our burger.</div>
+                                        <a class="added-to-cart" href="#"></a>
+                                        <span class="price">
+                                            <del>
+                                                <span>£</span> 12.61
+                                            </del>
+                                            <ins>
+                                                <span>£</span> 8.00
+                                            </ins>
+                                        </span>
+                                    </div> <!-- ./product-caption-->
+                                </div> <!--./product-block-->
+                            </li>
+                            <li class="product">
+                                <div class="product-block">
+                                    <span class="onsale">Sale!</span>
+                                    <div class="product-transition">
+                                        <button class="woosw-btn">Add to wishlist</button>
+                                        <div class="product-image">
+                                            <img src="images/3-1-450x450.png" alt="">
+                                        </div>
+                                        <a href="#"></a>
+                                    </div> <!--./product-transition-->
+                                    <div class="product-caption">
+                                        <div class="star-rating">
+                                            <span style="width: 65%;"> Rated
+                                                <strong class="rating">3.25</strong>
+                                                out of 5
+                                            </span>
+                                        </div>
+                                        <h3 class="product-title">
+                                            <a href="#">BBQ chicken breast</a>
+                                        </h3>
+                                        <div class="short-description"> A mighty meaty double helping of all the reasons you love our burger.</div>
+                                        <a class="added-to-cart" href="#"></a>
+                                        <span class="price">
+                                            <del>
+                                                <span>£</span> 12.61
+                                            </del>
+                                            <ins>
+                                                <span>£</span> 8.00
+                                            </ins>
+                                        </span>
+                                    </div> <!-- ./product-caption-->
+                                </div> <!--./product-block-->
+                            </li>
+                            <li class="product">
+                                <div class="product-block">
+                                    <span class="onsale">Sale!</span>
+                                    <div class="product-transition">
+                                        <button class="woosw-btn">Add to wishlist</button>
+                                        <div class="product-image">
+                                            <img src="images/3-1-450x450.png" alt="">
+                                        </div>
+                                        <a href="#"></a>
+                                    </div> <!--./product-transition-->
+                                    <div class="product-caption">
+                                        <div class="star-rating">
+                                            <span style="width: 65%;"> Rated
+                                                <strong class="rating">3.25</strong>
+                                                out of 5
+                                            </span>
+                                        </div>
+                                        <h3 class="product-title">
+                                            <a href="#">BBQ chicken breast</a>
+                                        </h3>
+                                        <div class="short-description"> A mighty meaty double helping of all the reasons you love our burger.</div>
+                                        <a class="added-to-cart" href="#"></a>
+                                        <span class="price">
+                                            <del>
+                                                <span>£</span> 12.61
+                                            </del>
+                                            <ins>
+                                                <span>£</span> 8.00
+                                            </ins>
+                                        </span>
+                                    </div> <!-- ./product-caption-->
+                                </div> <!--./product-block-->
+                            </li>
+                            <li class="product">
+                                <div class="product-block">
+                                    <span class="onsale">Sale!</span>
+                                    <div class="product-transition">
+                                        <button class="woosw-btn">Add to wishlist</button>
+                                        <div class="product-image">
+                                            <img src="images/3-1-450x450.png" alt="">
+                                        </div>
+                                        <a href="#"></a>
+                                    </div> <!--./product-transition-->
+                                    <div class="product-caption">
+                                        <div class="star-rating">
+                                            <span style="width: 65%;"> Rated
+                                                <strong class="rating">3.25</strong>
+                                                out of 5
+                                            </span>
+                                        </div>
+                                        <h3 class="product-title">
+                                            <a href="#">BBQ chicken breast</a>
+                                        </h3>
+                                        <div class="short-description"> A mighty meaty double helping of all the reasons you love our burger.</div>
+                                        <a class="added-to-cart" href="#"></a>
+                                        <span class="price">
+                                            <del>
+                                                <span>£</span> 12.61
+                                            </del>
+                                            <ins>
+                                                <span>£</span> 8.00
+                                            </ins>
+                                        </span>
+                                    </div> <!-- ./product-caption-->
+                                </div> <!--./product-block-->
+                            </li>
+                            <li class="product">
+                                <div class="product-block">
+                                    <span class="onsale">Sale!</span>
+                                    <div class="product-transition">
+                                        <button class="woosw-btn">Add to wishlist</button>
+                                        <div class="product-image">
+                                            <img src="images/3-1-450x450.png" alt="">
+                                        </div>
+                                        <a href="#"></a>
+                                    </div> <!--./product-transition-->
+                                    <div class="product-caption">
+                                        <div class="star-rating">
+                                            <span style="width: 65%;"> Rated
+                                                <strong class="rating">3.25</strong>
+                                                out of 5
+                                            </span>
+                                        </div>
+                                        <h3 class="product-title">
+                                            <a href="#">BBQ chicken breast</a>
+                                        </h3>
+                                        <div class="short-description"> A mighty meaty double helping of all the reasons you love our burger.</div>
+                                        <a class="added-to-cart" href="#"></a>
+                                        <span class="price">
+                                            <del>
+                                                <span>£</span> 12.61
+                                            </del>
+                                            <ins>
+                                                <span>£</span> 8.00
+                                            </ins>
+                                        </span>
+                                    </div> <!-- ./product-caption-->
+                                </div> <!--./product-block-->
+                            </li>
+                        </ul>
+                    </div> <!--./tab-content-item-->
+                    <div class="tab-content-item" style="display: none;"></div> <!--./tab-content-item-->
+                </div> <!--./tabs-contents-->
+            </div> <!-- ./menu-tab-container-->
+        </div> <!-- ./menu-section-->
+    </section>
+    <!-------------- Products items end  ------------->
+
+
+    <!-------------- client review start ---------->
+    <section class="client-review">
+        <div class="review-wrap">
+            <div class="review-title-container">
+                <h2 class="review-title">What your client says</h2>
+            </div> <!--./review-title-container-->
+            <div class="review-container responsive">
+                    <div class="client-slide-item">
+                        <div>
+                            <div class="item-box">
+                                <div class="top">
+                                    <div class="details">
+                                        <div class="avatar">
+                                            <div class="client-image">
+                                                <img src="images/avatar-1.jpg" alt="client picture">
+                                                <i class="fa-quote-left"></i>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">Rose</div>
+                                            <div class="job">Design</div>
+                                        </div>
+                                    </div> <!-- ./details-->
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div> <!-- ./top-->
+                                <div class="content">
+                                    "I would be lost without restaurant. I would like to personally thank you for your outstanding product."
+                                </div>
+                            </div> <!--./item-box-->
+                        </div>
+                    </div> <!--./slide item-->
+                    <div class="client-slide-item">
+                        <div>
+                            <div class="item-box">
+                                <div class="top">
+                                    <div class="details">
+                                        <div class="avatar">
+                                            <div class="client-image">
+                                                <img src="images/avatar-1.jpg" alt="client picture">
+                                                <i class="fa-quote-left"></i>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">Rose</div>
+                                            <div class="job">Design</div>
+                                        </div>
+                                    </div> <!-- ./details-->
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div> <!-- ./top-->
+                                <div class="content">
+                                    "I would be lost without restaurant. I would like to personally thank you for your outstanding product."
+                                </div>
+                            </div> <!--./item-box-->
+                        </div>
+                    </div> <!--./slide item-->
+                    <div class="client-slide-item">
+                        <div>
+                            <div class="item-box">
+                                <div class="top">
+                                    <div class="details">
+                                        <div class="avatar">
+                                            <div class="client-image">
+                                                <img src="images/avatar-1.jpg" alt="client picture">
+                                                <i class="fa-quote-left"></i>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">Rose</div>
+                                            <div class="job">Design</div>
+                                        </div>
+                                    </div> <!-- ./details-->
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div> <!-- ./top-->
+                                <div class="content">
+                                    "I would be lost without restaurant. I would like to personally thank you for your outstanding product."
+                                </div>
+                            </div> <!--./item-box-->
+                        </div>
+                    </div> <!--./slide item-->
+                    <div class="client-slide-item">
+                        <div>
+                            <div class="item-box">
+                                <div class="top">
+                                    <div class="details">
+                                        <div class="avatar">
+                                            <div class="client-image">
+                                                <img src="images/avatar-1.jpg" alt="client picture">
+                                                <i class="fa-quote-left"></i>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">Rose</div>
+                                            <div class="job">Design</div>
+                                        </div>
+                                    </div> <!-- ./details-->
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div> <!-- ./top-->
+                                <div class="content">
+                                    "I would be lost without restaurant. I would like to personally thank you for your outstanding product."
+                                </div>
+                            </div> <!--./item-box-->
+                        </div>
+                    </div> <!--./slide item-->
+                    <div class="client-slide-item">
+                        <div>
+                            <div class="item-box">
+                                <div class="top">
+                                    <div class="details">
+                                        <div class="avatar">
+                                            <div class="client-image">
+                                                <img src="images/avatar-1.jpg" alt="client picture">
+                                                <i class="fa-quote-left"></i>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">Rose</div>
+                                            <div class="job">Design</div>
+                                        </div>
+                                    </div> <!-- ./details-->
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div> <!-- ./top-->
+                                <div class="content">
+                                    "I would be lost without restaurant. I would like to personally thank you for your outstanding product."
+                                </div>
+                            </div> <!--./item-box-->
+                        </div>
+                    </div> <!--./slide item-->
+                    <div class="client-slide-item">
+                        <div>
+                            <div class="item-box">
+                                <div class="top">
+                                    <div class="details">
+                                        <div class="avatar">
+                                            <div class="client-image">
+                                                <img src="images/avatar-1.jpg" alt="client picture">
+                                                <i class="fa-quote-left"></i>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <div class="name">Rose</div>
+                                            <div class="job">Design</div>
+                                        </div>
+                                    </div> <!-- ./details-->
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div> <!-- ./top-->
+                                <div class="content">
+                                    "I would be lost without restaurant. I would like to personally thank you for your outstanding product."
+                                </div>
+                            </div> <!--./item-box-->
+                        </div>
+                    </div> <!--./slide item-->
+            </div> <!--./review-container-->
+        </div>
+    </section>
+    <!-------------- client review end ------------>
+
+
+    <!------------- footer section start ----------->
+
+    <section class="footer-section">
+        <div class="footer-row">
+            <div class="footer-column">
+                <div class="column-wrap">
+                    <h2>Address</h2>
+                    <div class="text-content">
+                        <p>570 8th Ave,</p>
+                        <p>
+                            Bonpara, Natore City <br>
+                            Bangladesh
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- ./footer-column-->
+            <div class="footer-column">
+                <div class="column-wrap">
+                    <h2>Book a table</h2>
+                    <div class="text-content">
+                        <p>Dogfood och Sliders foodtruck. <br>
+                            Under Om oss kan ni läsa
+                        </p>
+                    </div>
+                    <h2 class="phone-num">(850) 435-4155</h2>
+                </div>
+            </div> <!-- ./footer-column-->
+            <div class="footer-column">
+                <div class="column-wrap">
+                    <h2>Opening hours</h2>
+                    <div class="text-content">
+                        <p>Monday – Friday: 
+                            <span style="color:#ffffff">8am - 4pm</span> <br>
+                           Saturday: 
+                           <span style="color:#ffffff">9am - 5pm</span>
+                        </p>
+                    </div>
+                    <div class="footer-social-icon-container">
+                        <div class="icon-item">
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="icon-item">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="icon-item">
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- ./footer-column-->
+        </div>
+    </section>
+    <!------------- footer section end ----------->
+
+
+    <!------------- copyright section start ----------->
+    <section class="copyright-section">
+        <div>
+            <p>Copyright @ 2021 
+                <a href="#"><span style="color: #ffc222;">Blue It Team</span></a>
+                All Rights Reserved.
+            </p>
+        </div>
+    </section>
+
+    <!------------- copyright section end ----------->
+
+
+    <!------- site header cart side start ---------->
+    <div class="site-header-cart-side">
+        <div class="cart-side-heading">
+            <span class="cart-side-title">Shopping cart</span>
+            <a href="#" class="close-cart-side">Close</a>
+        </div>
+        <div class="widget widget-shopping-cart">
+            <div class="widget-shopping-cart-content">
+                <p class="cart-empty-message">No products in the cart.</p>
+            </div>
+        </div>
+    </div>
+    <!------------- site header cart side end ---------------->
+
+
+    <!-- jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slick js  -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <!-- coustom js  -->
+    <script src="js/script.js"></script>
+</body>
+</html>
